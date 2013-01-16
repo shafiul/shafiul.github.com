@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Kickstarting Firefox OS Apps Development</title>
+
+        <meta name="description" content="Beginner's guide for starting development of open web apps!">
+        <meta name="author" content="Shafiul Azam Chowdhury">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <h4>
+                        Kickstarting
+                    </h4>
+
+                    <p>
+
+                        <img src="files/fxos/Q00mt.png" style="border: 0; box-shadow:none;">
+                    </p>
+                    <h3>apps</h3>
+
+                    <h3>development</h3>
+
+                    <p>
+                    </p>
+                    <p>
+                        <br>
+                    </p>
+                    <p>Use Left &amp; Right arrows for page navigation<br>
+                    </p>
+
+
+
+
+
+
+
+
+
+
+
+                </section>
+                <section>
+                    <h2>Yes you can!</h2>
+                    <p align="center">
+                        <br>
+                    </p>
+                    <p align="center">You can start building Firefox OS apps <b>right now</b>, if...</p>
+                    <p align="center">
+                        <br>
+                    </p>
+                    <div>
+                        <ul>
+                            <li>You know <font color="#0066CC">HTML</font> basics<br>
+                            </li>
+                            <li>You know <font color="#0066CC">JavaScript</font> basics</li>
+                            <li>You have some idea with CSS</li>
+                            <li>You can press the RIGHT arrow<br>
+                            </li>
+                        </ul>
+                        <p>
+                            <br>
+                        </p>
+                        <p>seriously, to go to the next slide!<br>
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Contents</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <ol>
+                        <li>Intro</li>
+                        <li>Organization<br>
+                        </li>
+                        <li>Tools you'll need</li>
+                        <li>Hello, World<br>
+                        </li>
+                        <li>Docs - Where you'll learn</li>
+                        <li>Tips &amp; Tricks - desert!<br>
+                        </li>
+                    </ol>
+                </section>
+                <section>
+                    <h2>1. Intro</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <p>Probably you already know about <a href="http://www.mozilla.org/en-US/firefoxos/">
+                            <b>Firefox OS</b>
+                        </a>, note that it's not Firefox the browser... it's a brand new OS for mobile platforms.</p>
+                    <p>
+                        <br>
+                    </p>
+                    <p>We're interested in building apps which runs in devices with Firefox OS<br>
+                    </p>
+                    <p>
+                        <br>
+                    </p>
+                </section>
+                <section>
+                    <h2>It's already live!</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <img src="files/fxos/example-apps.jpg"> <img src="files/fxos/example-music.jpg">
+                    <img src="files/fxos/example-gallery.jpg">
+                    <br>
+                </section>
+                <section>
+                    <h2>2. Organization</h2>
+                    <p>of Firefox OS Apps</p>
+                    <p>
+                        <br>
+                    </p>
+                    <p>To develop any application, we worry about two things...</p>
+                    <p>
+                        <br>
+                    </p>
+                    <p>(next slides)<br>
+                    </p>
+                </section>
+                <section>
+                    <h2>User Interface</h2>
+                    <img src="files/fxos/uBYpB.jpg">
+                    <br>Pages, Forms, Buttons, sliders...<br>
+                </section>
+                <section>
+                    <h2>&amp; Controls!</h2>
+                    <img src="files/fxos/gears.gif">
+                    <br>Logic programming, loops, working with data etc...<br>
+                </section>
+                <section>
+                    <h2>Organization</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <p>While building Firefox OS apps, we</p>
+                    <p>
+                        <br>
+                    </p>
+                    <ul>
+                        <li>build user interface with <b>HTML</b> &amp; <b>CSS</b>
+                        </li>
+                        <li>&amp; <b>Javascript</b> does the programming!<br>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Philosophy</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <img src="files/fxos/dragon_thinking_small.gif"> So, Firefox OS apps are basically <b>Web Apps</b>!<br>
+                    <br>And since HTML/CSS/JavaScripts are standards, these apps run not only in Firefox OS devices, but on any device that have a browser!!! (Yes, on your Android too*)<br>
+                    <br>
+                    Don't misunderstand <i>web apps </i>- they run offline, too!<br>* Some APIs don't work in all browsers.<br>
+                </section>
+                <section>
+                    <h2>
+                        <br>
+                    </h2>
+                    <p>
+                        <br>
+                    </p>
+                    <h1>Let's Start!<br>
+                    </h1>
+                </section>
+                <section>
+                    <h2>3. Tools</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <ul>
+                        <li>Any <b>text editor</b> <i>(to write code)</i>
+                            <br>
+                        </li>
+                        <li>Latest <a href="http://www.mozilla.org/en-US/firefox/new/">
+                                <b>Firefox browser</b>
+                            </a> <i>(to see output!)</i>
+                        </li>
+                    </ul>
+                    <p>
+                        <br>
+                    </p>
+                    <p>Optionally (highly recommended):</p>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="http://people.mozilla.com/~myk/r2d2b2g/">Firefox OS Simulator Addon</a>
+                                <br>
+                            </li>
+                            <li>
+                                <a href="https://getfirebug.com/">Firebug</a> <i>(for debugging)</i>
+                                <br>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <h2>Text Editor</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <p>Any text editor will work. We'll be making following types of files:</p>
+                    <ul>
+                        <li>HTML (.html)</li>
+                        <li>JavaScript (.js)<br>
+                        </li>
+                        <li>CSS (.css)</li>
+                    </ul>
+                    <p>
+                        <br>
+                    </p>
+                    <p>You can use <a href="http://www.sublimetext.com/">Sublime</a>, Notepad++, Netbeans, Ecliplse or even the basic editor which comes with your OS.<br>
+                    </p>
+                </section>
+                <section>
+                    <h2>Firefox Browser</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <p>To see the complete functionality of your app, we'll use Firefox Browse - the desktop browser we all love.</p>
+                    <p>
+                        <br>
+                    </p>
+                    <p>We'll open the HTML files with our browser.<br>
+                    </p>
+                </section>
+                <section>
+                    <h2>Firefox OS Simulator</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <p>It's an addon for Firefox browser, install the addon and simulate Firefox OS in your desktop!</p>
+                    <p>
+                        <br>
+                    </p>
+                    <p>Finally, <b>Firebug</b> helps us debugging HTMLs &amp; JavaScripts, so install this addon too.<br>
+                    </p>
+                </section>
+                <section>Firefox OS Simulator<br>
+                    <br>
+                    <img src="files/fxos/05e14a90cdfda43ea83358afd17f3b76.png" height="413" width="402">
+                    <br>
+                </section>
+                <section>
+                    <h2>Hello, World!</h2>
+                    <p>
+                        <br>
+                    </p>
+                    <p>It's time for a "Hello World" app, right now!</p>
+                    <p>
+                        <br>
+                    </p>
+                    <p>
+                        <br>
+                    </p>
+                </section>
+                <section>Step 1: Create a directory named <i>hello</i>
+                    <br>
+                    <br>Create a directory named <i>
+                        <b>hello</b>
+                    </i> anywhere in your computer.<br>
+                    <br>This will be the base directory - we put all files of our app here.<br>
+                </section>
+                <section>Step 2: Create a file <b>index.html</b>
+                    <br>
+                    <br>Create a file <i>index.html</i> (it doesn't need to be index.html, it could be any name with .html extention) in the <i>hello</i> directory.<br>
+                    <br>
+                    <img src="files/fxos/2c75d5d89c74e2db347aefd69d8d9632.png">
+                    <br>
+                </section>
+                <section>See it in your browser<br>
+                    <br>Open the index.html file with your Firefox Browser. You can double-click or right-click then open with Firfox.<br>
+                </section>
+                <section>
+                    <img src="files/fxos/a89c15d727c672763e5b993af6a50cc3.png" height="495" width="558">
+                    <br>
+                    <br>
+                </section>
+                <section>But...doesn't look like a mobile app!<br>
+                    <br>Because, we've not taken care of screen size &amp; others.<br>
+                    <br>
+                    <h2>TIPS</h2>
+                    <br>To test mobile screens with various sizes, press <b>Control + Shift + M</b> in your Firefox!<br>
+                </section>
+                <section>
+                    <img src="files/fxos/14efccc9b6dee433ed82459d9d117ef2.png" height="368" width="346">
+                    <br>
+                    <br>Pressing <b>ctrl + shft + M</b> gives a mobile app look-&amp;-feel!<br>
+                </section>
+                <section>Step 3: Write the <a href="https://developer.mozilla.org/en-US/docs/Apps/Manifest">manifest</a> file<br>
+                    <br>All Firefox OS apps need a manifest file. We create <i>
+                        <b>hello.webapp</b>
+                    </i> file (note the .webapp extention) in hello directory:<br>
+                    <img src="files/fxos/819782e2c4b326f8a7c5c80065f3bd4e.png">
+                    <br>
+                    <br>
+                </section>
+                <section>Let's install our app in the simulator!<br>
+                    <br>Open the Firefox OS Simulator from:<br>
+                    <b>Tools</b> &gt; <b>Web Developer</b> &gt; Firefox OS Simulator<br>
+                    <br>Click on "<i>Add Directory</i>"<br>Select the hello.webapp file you've just created<br>
+                    <br>Bingo! Firefox OS Simulator will start with our app!<br>
+                </section>
+                <section>App in Firefox OS Simulator<br>
+                    <br>
+                    <img src="files/fxos/3d2c6a116bb44d87e3b842efbae8c0da.png" height="391" width="235">
+                    <br>
+                </section>
+                <section>We've added a Batman Icon Too!<br>
+                    <br>
+                    <img src="files/fxos/123eec1eeae066ed54068e5f750ee1c1.png" height="389" width="421">
+                    <br>
+                </section>
+                <section>
+                    <h2>References</h2>
+                    <ol>
+                        <li>http://media.smashingmagazine.com/images/data-visualization/infosthetics02.jpg</li>
+                        <li>http://www.deltacad.com/sample/gears.gif</li>
+                        <li>http://www.websiteinabox.com/presscenter/images/dragon_thinking_small.gif</li>
+                        <li>http://www.iconspedia.com/icon/batman-icon-37891.html<br>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+
+
+
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>

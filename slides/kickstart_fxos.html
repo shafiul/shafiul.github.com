@@ -16,12 +16,20 @@
         <link rel="stylesheet" href="css/theme/sky.css" id="theme">
 
         <!-- For syntax highlighting -->
-        <!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
 
         <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script src="files/fxos/fxos.js"></script>
         <script>
             document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
         </script>
+
+        <style type="text/css">
+            .noStyle{
+                border: 0;
+                box-shadow: none;    
+            }
+        </style>
 
         <!--[if lt IE 9]>
         <script src="lib/js/html5shiv.js"></script>
@@ -71,7 +79,7 @@
                     <p align="center">
                         <br>
                     </p>
-                    <p align="center">You can start building Firefox OS apps <b>right now</b>, if...</p>
+                    <p align="center">You can start building <script>printLogo();</script> apps <b>right now</b>, if...</p>
                     <p align="center">
                         <br>
                     </p>
@@ -178,7 +186,7 @@
                     <p>
                         <br>
                     </p>
-                    <img src="files/fxos/dragon_thinking_small.gif"> So, Firefox OS apps are basically <b>Web Apps</b>!<br>
+                    <img align="left" src="files/fxos/dragon_thinking_small.gif"> So, Firefox OS apps are basically <b>Web Apps</b>!<br>
                     <br>And since HTML/CSS/JavaScripts are standards, these apps run not only in Firefox OS devices, but on any device that have a browser!!! (Yes, on your Android too*)<br>
                     <br>
                     Don't misunderstand <i>web apps </i>- they run offline, too!<br>* Some APIs don't work in all browsers.<br>
@@ -284,21 +292,24 @@
                         <br>
                     </p>
                 </section>
-                <section>Step 1: Create a directory named <i>hello</i>
+                <section>
+                    <h4>Step 1: Create a directory named <b>hello</b> </h4>
                     <br>
                     <br>Create a directory named <i>
                         <b>hello</b>
                     </i> anywhere in your computer.<br>
                     <br>This will be the base directory - we put all files of our app here.<br>
                 </section>
-                <section>Step 2: Create a file <b>index.html</b>
+                <section>
+                    <h4>Step 2: Create file named <b>index.html</b> </h4>
                     <br>
                     <br>Create a file <i>index.html</i> (it doesn't need to be index.html, it could be any name with .html extention) in the <i>hello</i> directory.<br>
                     <br>
                     <img src="files/fxos/2c75d5d89c74e2db347aefd69d8d9632.png">
                     <br>
                 </section>
-                <section>See it in your browser<br>
+                <section>
+                    <h4>See it in your browser</h4>
                     <br>Open the index.html file with your Firefox Browser. You can double-click or right-click then open with Firfox.<br>
                 </section>
                 <section>
@@ -317,17 +328,28 @@
                     <br>
                     <br>Pressing <b>ctrl + shft + M</b> gives a mobile app look-&amp;-feel!<br>
                 </section>
-                <section>Step 3: Write the <a href="https://developer.mozilla.org/en-US/docs/Apps/Manifest">manifest</a> file<br>
-                    <br>All Firefox OS apps need a manifest file. We create <i>
+
+
+                <section>
+                    <h4>Step 3: Create Manifest file</h4>
+                    <br>
+                    All Firefox OS apps need a <a href="https://developer.mozilla.org/en-US/docs/Apps/Manifest">manifest</a> file. The manifest file tells the app's name, description, permissions it requires and some other basic settings.
+                    <br>
+                    Manifest file can have any name, but it should have <I>.webapp</I> extension.
+                </section>
+
+                <section>Create hello.webapp file in project directory <br>
+                    <br>We create <i>
                         <b>hello.webapp</b>
                     </i> file (note the .webapp extention) in hello directory:<br>
                     <img src="files/fxos/819782e2c4b326f8a7c5c80065f3bd4e.png">
                     <br>
                     <br>
                 </section>
-                <section>Let's install our app in the simulator!<br>
+                <section>
+                    <h4>Install app in the simulator!</h4>
                     <br>Open the Firefox OS Simulator from:<br>
-                    <b>Tools</b> &gt; <b>Web Developer</b> &gt; Firefox OS Simulator<br>
+                    <b>Tools</b> &gt; <b>Web Developer</b> &gt; <b>Firefox OS Simulator</b><br>
                     <br>Click on "<i>Add Directory</i>"<br>Select the hello.webapp file you've just created<br>
                     <br>Bingo! Firefox OS Simulator will start with our app!<br>
                 </section>
@@ -336,11 +358,122 @@
                     <img src="files/fxos/3d2c6a116bb44d87e3b842efbae8c0da.png" height="391" width="235">
                     <br>
                 </section>
+
                 <section>We've added a Batman Icon Too!<br>
                     <br>
                     <img src="files/fxos/123eec1eeae066ed54068e5f750ee1c1.png" height="389" width="421">
                     <br>
                 </section>
+
+                <section>
+                    <h4>More Fun: Add some scripts</h4>
+                    <br>
+                    We will add a text input box and a button in our simple app. <br>
+                    When user clicks button, an alert box with the text in the input field will be shown.
+                </section>
+
+                <section>
+                    <h4> Change the <b>index.html</b> file 
+                        <br>to add the input elements </h4>
+                    <br>
+                    <img src="files/fxos/12.png">
+                </section>
+
+                <section>
+                    <h4>Create a file named <b>hello.js</b> 
+                        <br>inside your project directory</h4>
+                    <br>
+
+                    <pre><code>
+// Reference UI elements
+var button = document.getElementById('myButton');
+var txtInput = document.getElementById('myTextInput');
+// Bind click event of the button with an event listener
+button.addEventListener('click', function(){
+    var text = txtInput.value;
+    // Show alert box with this text
+    alert(text);
+})
+                    </code></pre>
+
+                </section>
+
+                <section>
+                    Open <script type="text/javascript">printLogo()</script> Simulator and click <b>Update</b>
+                    <br>
+                    <img class='noStyle' src="files/fxos/nerds1.png"> 
+                    <img class='noStyle' src="files/fxos/nerds2.png">
+
+                </section>
+
+<!--                 <section>
+                    <h4></h4>
+                    <br>
+
+                </section> -->
+
+                <section>
+                    <h2>Congratulations!</h2>
+                    <br>
+                    You have created your first <script type="text/javascript">printLogo()</script> app!
+                </section>
+
+                <section>
+                    <h1>Tips &amp; Tricks</h1>
+                </section>
+
+                <section>
+                    <h4>Do we need to use the Simulator?</h4>
+                    <br>
+                    <p>
+                        Not really. You can test your app using the Firefox Browser. I can test all the functionalities almost, using the browser &amp; mobile view. So each time you update your app you can test by just refreshing the browser.
+                    </p>
+                </section>
+
+                <section>
+                    <h4>Using Frameworks</h4>
+                    <br>
+                    <p>
+                        To give your app a mobile application like look and feel, you can use many frameworks. 
+                        <br>
+                        <a href="http://jquerymobile.com/demos/1.2.0/">jQuery Mobile</a> is a cool framework, which turns your HTML stuffs into cool mobile app!
+                    </p>
+                    <br>
+                    Also handle mobile input events like tap, long tap, swipe etc!
+                </section>
+
+                <section>
+                    <h4>Using jQuery Mobile</h4>
+                    <br>
+                    <img src="files/fxos/mines.png" align='left'>
+                    <br>
+                    Cool, right? learning jQuery Mobile is very easy! <br><br>
+                    See a video tutorial on <a href='http://popcorn.webmadecontent.org/9wp'>building an app </a> in 6 minutes using jQuery Mobile by Aniruddha, you won't regret this!
+                    <br><br>
+                    Also has a drag &amp; drop interface to build UI!
+                </section>
+
+                <section>
+                    <h4>Publishing your app</h4>
+                    <br>
+                    Once you've completed your app, you need to upload it in a server, and share the link.
+                </section>
+
+                <section>
+                    <h4>Firefox Marketplace</h4>
+                    <br>
+                    <img src="files/fxos/market.png" align='left'>
+                    <br>
+                    You can submit your app in the <b>Firefox Marketplace</b> for more publicity!
+                    <br><br>
+                    Sign in to <a href='https://marketplace.firefox.com/developers/'>Marketplace Developer Hub</a> &amp; follow the instructions!
+                </section>
+
+                <section>
+                    <h4></h4>
+                    <br>
+                </section>
+
                 <section>
                     <h2>References</h2>
                     <ol>
@@ -351,6 +484,7 @@
                         </li>
                     </ol>
                 </section>
+
             </div>
 
 
@@ -359,6 +493,7 @@
         </div>
 
         <script src="lib/js/head.min.js"></script>
+        
         <script src="js/reveal.min.js"></script>
 
         <script>

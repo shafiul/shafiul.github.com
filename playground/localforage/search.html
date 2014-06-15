@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<HEAD>
+		<TITLE>IndexedDB Demo</TITLE>
+		<script src='common.js'></script>
+	</HEAD>
+	<BODY>
+		<H1>Search</H1>
+		<DIV>
+			<FORM>
+				Tag: <input type="text" id="tag" />
+				<input type="button" value="Search" id="searchBtn" />
+			</FORM>
+		</DIV>
+
+		<br />
+
+		<div id='all'></div>
+
+		<br/>
+
+		<a href="index.html">Home</a>
+
+	<script>
+
+		$('searchBtn').onclick = function(e){
+			tag = $('tag').value;
+
+			db_open(search_tag);
+
+			function search_tag(){
+				get_for_index(tag);
+			}
+		}
+
+	</script>
+
+	</BODY>
+</html>

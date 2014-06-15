@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<HEAD>
+		<TITLE>IndexedDB Demo</TITLE>
+		<script src='localforage.js'></script>
+		<script src='common.js'></script>
+	</HEAD>
+	<BODY>
+		<H1>New Entry</H1>
+		<DIV>
+			<FORM>
+				Title: <input type="text" id="title" />
+				Tag: <input type="text" id="tag" />
+				Date: <input type="text" id="when" />
+				<input type="button" value="Save" id="saveBtn" />
+			</FORM>
+		</DIV>
+
+		<br/>
+
+		<a href="all.html">All</a> 
+		<!-- <a href="search.html">Search by tag</a> -->
+
+	<script>
+		$('saveBtn').onclick = function(e){
+
+			title = $('title').value;
+			tag = $('tag').value;
+			when = $('when').value;
+
+			add_article({
+				title: title,
+				tag: tag,
+				when: when
+			});
+		}
+	</script>
+
+	</BODY>
+</html>

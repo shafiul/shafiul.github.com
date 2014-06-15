@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+	<HEAD>
+		<TITLE>IndexedDB Demo</TITLE>
+		<script src='common.js'></script>
+	</HEAD>
+	<BODY>
+		<H1>Search</H1>
+		<DIV>
+			<FORM>
+				Title: <input type="text" id="title" />
+				Tag: <input type="text" id="tag" />
+				Date: <input type="text" id="when" />
+				<input type="button" value="Save" id="saveBtn" />
+			</FORM>
+		</DIV>
+
+		<br/>
+
+		<a href="all.html">All</a>
+
+	<script src='home.js'></script>
+
+	</BODY>
+</html>

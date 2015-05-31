@@ -1,7 +1,7 @@
 var bigTitle = 'Shafiul Azam Chowdhury';
 var littleTitle = '<b>Senior Software Engineer</b> at ZS Solutions Ltd.'
 var headerLinks= '<br/><a href="index.html">Home</a> | \
-<a href="http://bdhacker.wordpress.com">Blog</a>'
+<a href="bio.html">Bio</a>'
 
 var myFooter = '<p style="text-align: left; font-size: 10px;">\
           &copy; Nothing | \

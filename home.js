@@ -16,7 +16,7 @@ function populatePersonalUpdates(data){
 	var markup = '';
 	totalPosts = 0;
 	for(i = data.length - 1; i >= 0; i--){
-		markup += '<p>' + data[i] + '</p>';
+		markup += '<p>&bullet; ' + data[i] + '</p>';
 
 		if(++totalPosts > 7){
 			break;

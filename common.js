@@ -1,13 +1,14 @@
 var bigTitle = 'Shafiul Azam Chowdhury';
 var littleTitle = '<b>Senior Software Engineer</b> at ZS Solutions Ltd.'
 var headerLinks= '<br/><a href="index.html">Home</a> | \
-<a href="bio.html">Bio</a>'
+<a href="bio.html">Bio</a> | \
+<a href="presentations.html">Presentations</a>'
 
 var myFooter = '<p style="text-align: left; font-size: 10px;">\
           &copy; Nothing | \
           <a href="http://twitter.com/ishafiul">@ishafiul</a> |\
           <a href="http://bdhacker.wordpress.com">Blog</a> |\
-          <a href="http://shafiul.users.sf.net">Old Site</a>\
+          <a href="presentations.html">Presentations</a>\
         </p>';
 
 function commonDecoration(){

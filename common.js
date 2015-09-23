@@ -1,5 +1,5 @@
 var bigTitle = 'Shafiul Azam Chowdhury';
-var littleTitle = '<b>Senior Software Engineer</b> at ZS Solutions Ltd.'
+var littleTitle = '<b>PhD Student and <a title=\"Graduate Research Assistant\">GRA</a></b> at <a title=\"Computer Science and Engineering Department at The University of Texas at Arlington\" href=\"http://cse.uta.edu\">CSE @ UTA</a>'
 var headerLinks= '<br/><a href="index.html">Home</a> | \
 <a href="bio.html">Bio</a> | \
 <a href="presentations.html">Presentations</a>'

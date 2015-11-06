@@ -6,7 +6,8 @@ var headerLinks= '<br/><a href="index.html">Home</a> | \
 <a href="projects.html">Projects</a>'
 
 var myFooter = '<p style="text-align: left; font-size: 10px;">\
-          &copy; Nothing | \
+          &copy; 2015, Shafiul Azam Chowdhury. You may not copy contents from this website \
+          without prior permission from the author. | \
           <a href="http://twitter.com/ishafiul">@ishafiul</a> |\
           <a href="http://bdhacker.wordpress.com">Blog</a> |\
           <a href="presentations.html">Presentations</a> |\

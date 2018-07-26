@@ -20,7 +20,7 @@ function populatePersonalUpdates(data){
 		if(!data[i])
 			continue;
 
-		markup += '<p>&bullet; ' + data[i] + '</p>';
+		markup += '<li class = "list-group-item">' + data[i] + '</li>';
 
 		if(++totalPosts > 7){
 			break;

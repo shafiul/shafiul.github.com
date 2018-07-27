@@ -1,0 +1,89 @@
+{
+  "updates2" : {
+    "data" : ["Our poster exploring privacy of social network users at <a href='https://www.usenix.org/conference/soups2016/poster-session' target='blank'><b>SOUPS '16</b></a>. <a href='https://www.usenix.org/sites/default/files/soups16poster34-ahmed.pdf' target='blank'>Read the abstract.</a>", "Presented our paper <a href=\"http://ranger.uta.edu/~csallner/papers/Chowdhury16CyFuzz-abstract.html\">CyFuzz: A differential testing framework for cyber-physical systems development environments</a> at <a href=\"http://cyphy.org/\">CyPhy 2016</a>!", "We will be showing our demo \"Fuzzing Cyber-Physical Systems Development Environments with CyFuzz\" in <a href=\"http://hscc2017.ece.illinois.edu/\">HSCC 2017</a>", "Served as Artifact Evaluation Committee Member at International Symposium on Software Testing and Analysis (ISSTA) 2017", "Our paper <i>Automatically Finding Bugs in a Commercial Cyber-Physical System Development Tool Chain with <b>SLforge</b></i> has been accepted at 40th International Conference on Software Engineering (ICSE) 2018", "Presented poster <i>Understanding and Improving Cyber-Physical System Models and Development Tools</i> at the Doctoral Symposium at 40th International Conference on Software Engineering (ICSE) 2018", "Presented our paper <i>A Curated Corpus or Simulink Models for Model-based Empirical Studies</i> at 4th International Workshop on Software Engineering for Smart Cyber-Physical Systems (SEsCPS), co-located at 40th International Conference on Software Engineering (ICSE) 2018", "Our <b>SLforge</b> poster has received third prize in the <b>ACM Student Research Competition</b> at 40th International Conference on Software Engineering (ICSE) 2018" ],
+    "data_post" : "</li>",
+    "data_pre" : "<li class = 'list-group-item'>",
+    "html_selector" : "#personalUpdates",
+    "max_display" : 4,
+    "post" : "",
+    "pre" : "",
+    "reverse" : true
+  },
+  "template" : {
+    "data" : [ ],
+    "data_post" : "</li>",
+    "data_pre" : "<li>",
+    "html_selector" : "#divid",
+    "max_display" : 4,
+    "post" : "",
+    "pre" : "",
+    "reverse" : false
+  },
+    "skills" : {
+    "data" : [ "C++", "Java", "MATLAB", "Python", "JavaScript", "Object-oriented Design", "Databases", "Automated Testing", "Compiler Validation", "Model Checking", "Machine Learning", "Cyber-physical Systems", "Test Driven Development", "Scalability", "Version Control", "Containers" ],
+    "data_post" : "</span>",
+    "data_pre" : "<span class='badge badge-light'>",
+    "html_selector" : "#mySkills",
+    "max_display" : 20,
+    "post" : "",
+    "pre" : "",
+    "reverse" : false
+  },
+  "work" : {
+    "data" : [ 
+        {
+            "skip": true,
+            "title": "Intern",
+            "company": "<a href='#'></a>",
+            "duration": "",
+            "location": "",
+            "description": "",
+            "technologies": [] 
+        },
+        {
+            "skip": false,
+            "title": "Software Engineering (part time)",
+            "company": "<a href='https://field.buzz/gmbh/'>PROGmaatic Developer Network</a>",
+            "duration": "Sep 2009 - Mar 2012",
+            "location": "Dhaka, Bangladesh",
+            "description": "Designed and developed various e-commerce back-ends and front-ends. Recruited new developers",
+            "technologies": ["JavaScript", "PHP", "Drupal CMS", "CodeIgniter"] 
+        },
+        {
+            "skip": false,
+            "title": "Senior Software Engineer",
+            "company": "<a href='https://www.iappdragon.com/'>AppDragon UK</a>",
+            "duration": "Jan 2014 - Aug 2016",
+            "location": "Dhaka Bangladesh",
+            "description": "Led team. Designed and developed a non-blocking <a title='SmartMessage' href='https://www.iappdragon.com/smartMessage/''>back-end</a> for bulk messaging, which addressed the scalibility issues of the earlier product. ",
+            "technologies": ["Python", "Tornado Asynchronus Server", "Celery Task Scheduler", "SQLAlchemy", "REST", "TDD", "Vagrant"] 
+        },
+        {
+            "skip": false,
+            "title": "Software Engineer",
+            "company": "<a href='http://www.revesoft.com/'>REVE Systems</a>",
+            "duration": "Feb 2013 - Jan 2014",
+            "location": "Dhaka, Bangladesh",
+            "description": "Fixed concurrency-issues and increased the number of concurrent clients in a multi-threaded <a href='https://www.revesoft.com/products/itel-voip-softswitch'>VoIP softswitch</a>.<br><br>Implemented new features including voice mail, <a href='https://www.revesoft.com/products/itel-billing'>call-shop</a> and secure database backup. Developed server utilities including automated bill-generation and server health monitoring. ",
+            "technologies": ["Java EE", "JavaScript", "Java SE", "Oracle DBMS", "MySQL"] 
+        },
+        {
+            "skip": false,
+            "title": "Engineering Intern",
+            "company": "<a href='http://mathworks.com/'>The MathWorks</a>",
+            "duration": "Jan 2018 - May 2018",
+            "location": "Massachusetts, USA",
+            "description": "Developed C++ infrastructure to automatically validate the <a href='https://www.mathworks.com/products/fixed-point-designer.html'>Fixed-Point Toolbox</a> for MATLAB, using automated oracles to test various linear algebra operators for fixed-point data type.",
+            "technologies": ["Modern C++", "MATLAB", "Google Test"] 
+        } 
+         ],
+    "data_post" : "",
+    "data_pre" : "",
+    "html_selector" : "#myWork",
+    "max_display" : 5,
+    "post" : "",
+    "pre" : "",
+    "item_decorator": "workDecorator",
+    "reverse" : true
+  }
+}

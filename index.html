@@ -43,7 +43,7 @@
   </head>
 
   <body>
-    <div class="jumbotron">
+<!--     <div class="jumbotron">
       <div class="container">
         <div style="float:left;">
           <h2 id="bigTitle"></h2>
@@ -51,7 +51,14 @@
         </div>
         <div id="headerLinks" style="float:right;"></div>
       </div>
-    </div>
+    </div> -->
+
+
+      <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal" id="bigTitle"></h5>
+        <nav class="my-2 my-md-0 mr-md-3" id="headerlinks"></nav>
+        <!-- <a class="btn btn-outline-primary" href="#">Sign up</a> -->
+      </div>
 
     <div class="container">
       <!-- Example row of columns -->
@@ -63,44 +70,38 @@
           <br />
 
           <div class="alert alert-success" role="alert">
-  <!-- <h4 class="alert-heading">Well done!</h4> -->
-  <p>
-    I&apos;m doing my PhD in automated software validation and cyber-physical systems tool chain testing
-  </p>
-  <hr>
-  <p class="mb-0">
-    I developed C++ based tools to automatically test MATLAB at <a href="https://www.mathworks.com/">The MathWorks</a>
-  </p>
+            <p>
+              Automated compiler validation using program generation, mutation and deep learning
+            </p>
+            <hr>
+            
+            Computer Science PhD Student at <a href=\"http://cse.uta.edu\">University of Texas - Arlington</a>
 
-  <hr />
+            <hr>
+            <p class="mb-0">
+              Developed C++ based tools to automatically test MATLAB at <a href="https://www.mathworks.com/">The MathWorks</a>
+            </p>
 
-  Software Engineering lab at <a href="https://uta.edu">The University of Texas - Arlington</a> and <a href="http://www.verivital.com">VeriVital</a> lab at <a href="https://www.vanderbilt.edu/">Vanderbilt University</a>
+          </div>
 
-</div>
-
-
-
-
-
-        </div>
+        </div> <!-- Column -->
 
         <div class="col-md-8">
-          <h3>Automated Validation of Complex Software Tool Chain</h3>
+            <h3>Automated Validation of Complex Software Tool Chain</h3>
 
-          <br />
+            <br />
 
-          <img src="assets/images/slforgepromo.PNG" class="img-fluid" alt="Automated testing schematic diagram" />
+            <img src="assets/images/slforgepromo.PNG" class="img-fluid" alt="Automated testing schematic diagram" />
 
-          <br />
+            <br />
 
-          Our <a href="https://github.com/verivital/slsf_randgen/wiki" role="button">SLforge</a> tool automatically creates complex Simulink (cyber-physical system models) programs and uses them to find defects in <a href="https://www.mathworks.com/products/simulink.html">MATLAB/Simulink</a> -  
-          the popular IDE for rapid prototyping of embedded systems. 
-
+            Our <a href="https://github.com/verivital/slsf_randgen/wiki" role="button">SLforge</a> tool automatically creates Simulink (cyber-physical system models) programs and uses them to find bugs in <a href="https://www.mathworks.com/products/simulink.html">MATLAB/Simulink</a> -  
+            the popular IDE for rapid prototyping of embedded systems. 
                   
-        </div>
+        </div> <!-- Column -->
 
 
-      </div>
+      </div> <!-- Row -->
 
       <!-- <hr/> -->
 
@@ -108,8 +109,6 @@
 
       <div class="row">
         <div class="col-md-8">
-
-
 
           <div class="card border-light mb-3" style="">
             <div class="card-header">Featured Research Projects</div>
@@ -127,12 +126,14 @@
 
               <div class="btn-group" role="group" aria-label="SLforge">
                 <button onclick="gotoURL('https://github.com/verivital/slsf_randgen/wiki')" type="button" class="btn btn-secondary">Learn More</button>
-                <button onclick="gotoURL('http://ranger.uta.edu/~csallner/papers/Chowdhury18SLforge.pdf')" type="button" class="btn btn-secondary btn-sm">Read ICSE 2018 Paper</button>
+                <button onclick="gotoURL('http://ranger.uta.edu/~csallner/papers/Chowdhury18SLforge.pdf')" type="button" class="btn btn-secondary btn-sm">Read Paper</button>
                 <button onclick="gotoURL('http://ranger.uta.edu/~csallner/papers/Chowdhury18SLforge_Slides.pptx')" type="button" class="btn btn-secondary btn-sm">Conference Presentation</button>
                 <button onclick="gotoURL('https://github.com/verivital/slsf_randgen')" type="button" class="btn btn-secondary">Fork at GitHub</button>
               </div>
 
              </p>   
+
+             <br>
 
               <h5 class="card-title">Largest Public Corpus of Simulink Models</h5>
               <p class="card-text">
@@ -140,8 +141,8 @@
                 To explore real-world cyber-physical system model metrics, we have developed and are maintaining the 
                 largest corpus of publicly available MATLAB/Simulink models  
 
-              <div class="btn-group" role="group" aria-label="Basic example2">
-                <button onclick="gotoURL('https://github.com/verivital/slsf_randgen/wiki/Curated-Corpus-of-Publicly-Available-Simulink-Models')" type="button" class="btn btn-secondary">Learn More/Download</button>
+              <div class="btn-group" role="group" aria-label="corpus">
+                <button onclick="gotoURL('https://github.com/verivital/slsf_randgen/wiki/Curated-Corpus-of-Publicly-Available-Simulink-Models')" type="button" class="btn btn-secondary">Learn More</button>
                 <button onclick="gotoURL('http://ranger.uta.edu/~csallner/papers/Chowdhury18Curated.pdf')" type="button" class="btn btn-secondary btn-sm">Read Paper</button>
                 <button onclick="gotoURL('http://ranger.uta.edu/~csallner/papers/Chowdhury18Curated_Slides.pptx')" type="button" class="btn btn-secondary btn-sm">Conference Presentation</button>
                 <button onclick="gotoURL('https://github.com/verivital/slsf_randgen')" type="button" class="btn btn-secondary">Fork at GitHub</button>
@@ -253,28 +254,6 @@
 
             </div>
 
-
-          <!-- <h2>Open Source</h2>
-
-          <br/>
-          
-          I am open source enthusiast and promote <i>Open Web Technologies</i>. I voluntarily contributed as <a href="https://reps.mozilla.org/u/shafiul/"><i>Mozilla Representative</i></a> by educating, promoting and talking at tech events.
-
-          <br/><br/>
-          
-          I wrote and translated JavaScript and HTML5 documentations at <a href="https://developer.mozilla.org/">Mozilla Developer Network</a>. I used to review apps at <a href="https://marketplace.firefox.com/">Firefox Marketplace</a>.  -->
-
-          
-<!-- 
-          <h2>Quick Links</h2>
-
-          <br/>
-
-          &bullet; <a href="bio.html"><b>Academic/Professional Details</b></a> <br/>
-          &bullet; <a href="projects.html"><b>Selected Projects</b></a>
-
-          <br/><br/><br><br><br> -->
-
       </div> <!-- Sidebar End -->
 
 
@@ -282,7 +261,9 @@
 
       <hr>
 
-      <footer id="myFooter"></footer>
+      <footer>
+        <p id="myFooter" style="text-align: left; font-size: 10px;" ></p>
+      </footer>
     </div> <!-- /container -->
 
 

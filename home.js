@@ -12,7 +12,9 @@ function workDecorator(data){
 
 
 $(document).ready(function(){
+	loadFire("https://shafiul.firebaseio.com/headerlinks");
 	loadFire("https://shafiul.firebaseio.com/updates2");
 	loadFire("https://shafiul.firebaseio.com/work");
 	loadFire("https://shafiul.firebaseio.com/skills");
+	loadFire("https://shafiul.firebaseio.com/footerlinks");
 });

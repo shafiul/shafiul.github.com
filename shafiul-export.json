@@ -51,7 +51,7 @@
       "MathWorks supporting us investaging automated validation of Simulink, the de-facto modeling tool in cyber-physical systems development through <b>Research Grant</b>",
       "Very happy to receive John S. Schuchman <b>Outstanding Doctoral Student Award</b> at UTA",
       "Our National Science Foundation (NSF) <a href='https://www.nsf.gov/awardsearch/showAward?AWD_ID=1911017&HistoricalAwards=false'>grant</a> to explore mutation and deep-learning based compiler validation has been accepted!",
-      "Returned to UTA after an exciting and fruitful machine learning/software engineering internship at Facebook!" 
+      "Paper <i> SLEMI: Equivalence Modulo Input (EMI) Based Mutation of CPS Models for Finding Compiler Bugs in Simulink</i> accepted at ICSE 2020!" 
     ],
     "data_post" : "</li>",
     "data_pre" : "<li class = 'list-group-item'>",
@@ -94,6 +94,14 @@
       "technologies" : [ "Python", "Tornado Asynchronus Server", "Celery Task Scheduler", "SQLAlchemy", "REST", "Test Driven Development", "Vagrant" ],
       "title" : "Senior Software Engineer"
     }, {
+      "company" : "<a href='http://uta.edu/'>University of Texas at Arlington</a>",
+      "description" : "Explored novel techniques to automatically find compiler bugs in Simulink, the widely used cyber-physical system development tool. Developed the first known tool to automatically generate valid Simulink models, and mutate maintaining functional equivalence.",
+      "duration" : "Sep 2015 - Dec 2019",
+      "location" : "Texas, USA",
+      "skip" : false,
+      "technologies" : [ "C++", "MATLAB", "Python", "Deep Learning", "RNN", "Recurrent Neural Networks" ],
+      "title" : "Graduate Research Assistant"
+    }, {
       "company" : "<a href='http://mathworks.com/'>The MathWorks</a>",
       "description" : "Developed C++ infrastructure to automatically validate the <a href='https://www.mathworks.com/products/fixed-point-designer.html'>Fixed-Point Toolbox</a> for MATLAB, using automated oracles to test various linear algebra operators for fixed-point data type.",
       "duration" : "Jan 2018 - May 2018",
@@ -116,7 +124,7 @@
     "item_decorator" : "workDecorator",
     "max_display" : 5,
     "post" : "",
-    "pre" : "",
+    "pre" : "<hr/>",
     "reverse" : true
   }
 }
